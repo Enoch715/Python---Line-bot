@@ -49,8 +49,9 @@ def handle_message(event):
 
         line_bot_api.reply_message(
         event.reply_token,
-        ticker_message)
+        sticker_message)
         return
+
     if msg in ['hi', 'Hi']:
         r = '哈囉，您好'
     elif msg == '你吃飯了嗎?':
